@@ -10,6 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.15.8"
+    "astro": "5.0.0-beta.1"
+  },
+  "devDependencies": {
+    "postcss-preset-env": "^10.0.3"
   }
 }
