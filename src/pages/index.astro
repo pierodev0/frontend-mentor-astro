@@ -1,12 +1,37 @@
 ---
+import Card from "../components/landing/Card.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-   <h1>Proyectos frontendmentor</h1>
+  <main class="bg-slate-950 pb-12">
+    <header class="h-screen grid place-content-center">
+      <h1
+        class="text-5xl mx-auto max-w-screen-lg text-center sm:text-7xl text-white font-bold"
+      >
+        Proyectos Frontend Mentor
+      </h1>
+    </header>
+    <section
+      class="grid gap-8 lg:gap-10 w-full max-w-screen-xl sm:grid-cols-2 xl:grid-cols-3 wrapper"
+    >
+      <!-- <divc class="flex flex-col">
+        <a href="/acordion" class="text-xl underline text-blue-500">Acordion</a>
+        <a href="/carrito" class="text-xl underline text-blue-500">Carrito</a>
+      </divc> -->
+
+      <Card
+        title="Acordion"
+        description="Acordion Componente hecho con Javascript y CSS"
+        image="/landing/images/acordion.jpg"
+        href="/acordion"
+      />
+      <Card
+      title="Carrito de compras"
+      description="Simulacion de un carrito de compras hecho con CSS y Javascript"
+      image="/landing/images/carrito.jpg"
+      href="/carrito"
+    />
+    </section>
   </main>
 </Layout>
-
-a
-
