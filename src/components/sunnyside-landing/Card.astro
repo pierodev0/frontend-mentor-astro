@@ -1,0 +1,38 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  inverse?: boolean;
+}
+const { image, description, title, inverse } = Astro.props;
+---
+
+<article
+  class=`flex flex-col ${inverse ? "md:flex-row" : "md:flex-row-reverse"}`
+>
+  <picture class="md:w-1/2 md:relative h-[300px] md:h-auto">
+    <source
+      class="bg-red-200 h-full w-full md:absolute object-cover"
+      media="(min-width: 640px)"
+      srcset=`/sunnyside-landing/images/desktop/${image}.jpg`
+    />
+    <img
+      class="bg-red-200 h-full w-full md:absolute object-cover"
+      src=`/sunnyside-landing/images/mobile/${image}.jpg`
+      alt=`Image of ${title}`
+    />
+  </picture>
+  <div
+    class="md:w-1/2 flex items-center md:items-start flex-col gap-5 px-8 py-6 md:py-48 md:px-28 text-center md:text-left"
+  >
+    <h2 class="text-3xl font-serif font-black">{title}</h2>
+    {description}
+
+    <a
+      href=""
+      class="font-serif font-black text-blue-950 uppercase after:h-3 after:w-[100%] after:bg-yellow-200/50 after:rounded-full after:block after:-mt-3"
+      >Learn more</a
+    >
+  </div>
+</article>
