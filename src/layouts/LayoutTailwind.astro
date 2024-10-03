@@ -21,45 +21,4 @@ import './base.css'
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		/* background: #13151a; */
-	}
 
-	*,*::after,*::before {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-	}
-
-/* 	
-
-	button {
-		border: none;
-		
-	} */
-
-	.wrapper {
-		width: 100%;
-		max-width: 1140px;
-		padding-inline: 40px;
-		margin-inline: auto;
-
-		@media (min-width: 768px){
-			padding-inline: 20px;
-		}
-	}
-	
-</style>
