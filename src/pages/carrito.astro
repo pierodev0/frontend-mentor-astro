@@ -267,6 +267,8 @@ import { carrito } from "../data/carrito.js";
       const filterItems = cartItems.filter((item) => item.id !== id);
       cartItems = filterItems;
 
+
+      $(`[data-id='${id}'] img`).classList.remove("outline");
       renderButtons(id);
       renderCart();
     }
