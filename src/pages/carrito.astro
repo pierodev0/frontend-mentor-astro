@@ -1,10 +1,10 @@
 ---
 import Card from "../components/carrito/Card.astro";
-import Layout from "../layouts/Layout.astro";
 import { carrito } from "../data/carrito.js";
+import LayoutTailwind from "../layouts/LayoutTailwind.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<LayoutTailwind title="Welcome to Astro.">
   <section class="bg-orange-100/50">
     <div class="flex gap-4 wrapper py-12">
       <div class="">
@@ -170,7 +170,7 @@ import { carrito } from "../data/carrito.js";
       >
     </section>
   </div>
-</Layout>
+</LayoutTailwind>
 
 <script>
   const $ = (el) => document.querySelector(el);
