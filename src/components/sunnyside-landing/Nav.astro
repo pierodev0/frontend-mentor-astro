@@ -1,0 +1,72 @@
+---
+import LinkNav from "./LinkNav.astro";
+
+
+---
+<header class="bg-sky-400 pb-12">
+    <nav class="h-[80px] flex justify-between items-center wrapper">
+      <picture>
+        <img src="/sunnyside-landing/images/logo.svg" alt="" />
+      </picture>
+      <ul id="nav__label" class="nav__label hidden sm:flex">
+        <LinkNav href="#" title="About" />
+        <LinkNav href="#" title="Services" />
+        <LinkNav href="#" title="Projects" />
+        <li class="flex items-center justify-center">
+          <button
+            class="text-black bg-yellow-300 sm:bg-white px-6 h-10 rounded-full uppercase font-bold font-serif hover:bg-sky-300 hover:text-white transition"
+            >Contact</button
+          >
+        </li>
+      </ul>
+
+      <label
+        id="menu-button"
+        class="size-6
+        bg-[url('/sunnyside-landing/images/icon-hamburger.svg')]
+        text-white
+        bg-cover
+        cursor-pointer
+        sm:hidden"
+      >
+      </label>
+    </nav>
+  </header>
+
+  <style>
+   
+    .bg-close {
+      background-image: url("/sunnyside-landing/images/icon-close.svg");
+    }
+    .nav__label {
+      @apply max-sm:items-center 
+          max-sm:justify-center 
+          max-sm:gap-4 gap-8 
+          max-sm:bg-white 
+          max-sm:w-[85%] 
+          max-sm:absolute top-[120px] 
+          z-50 max-sm:right-1/2
+          max-sm:translate-x-1/2
+          max-sm:flex-col
+          max-sm:p-6
+          max-sm:after:block
+          max-sm:after:size-[40px]
+          max-sm:after:absolute
+          max-sm:after:top-1
+          max-sm:after:right-0
+          max-sm:after:-translate-y-full
+          max-sm:after:border-l-[40px]
+          max-sm:after:border-l-transparent
+          max-sm:after:border-b-[40px]
+          max-sm:after:border-white;
+    }
+  </style>
+  
+  <script>
+    const menuButton = document.querySelector("#menu-button");
+    const nav = document.querySelector("#nav__label");
+    menuButton.addEventListener("click", (e) => {
+      menuButton.classList.toggle("bg-close");
+      nav.classList.toggle("hidden");
+    });
+  </script>

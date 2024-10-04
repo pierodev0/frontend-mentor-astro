@@ -1,0 +1,70 @@
+---
+
+import Card from "./Card.astro";
+---
+<section class="">
+  <Card
+    title="Transform your brand"
+    image="image-transform"
+    description="We are a full-service creative agency specializing in helping brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you."
+  />
+  <Card
+    title="Stand out to the right audience"
+    image="image-stand-out"
+    description="Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, weâ€™ll build and extend your brand in digital places. "
+    inverse
+  />
+</section>
+<section class="lg:flex">
+    <article class="w-full lg:w-1/2 h-[556px] relative">
+      <picture class="">
+        <source
+          class="bg-red-200 h-full w-full object-cover object-bottom"
+          media="(min-width: 640px)"
+          srcset="/sunnyside-landing/images/desktop/image-graphic-design.jpg"
+        />
+        <img
+          src="/sunnyside-landing/images/mobile/image-graphic-design.jpg"
+          alt=""
+          class="bg-red-200 h-full w-full object-cover"
+        />
+      </picture>
+      <div
+        class="absolute bottom-5 left-0 right-0 text-center block w-full px-[10%] md:px-[20%] text-emerald-800 space-y-4"
+      >
+        <h2 class="text-4xl font-black font-serif text-shadow">
+          Graphic Design
+        </h2>
+        <p>
+          Great design makes you memorable. We deliver artwork that
+          underscores your brand message and captures potential clients’
+          attention.
+        </p>
+      </div>
+    </article>
+    <article class="w-full lg:w-1/2 h-[556px] relative">
+      <picture class="">
+        <source
+          class="bg-red-200 h-full w-full object-cover object-bottom"
+          media="(min-width: 640px)"
+          srcset="/sunnyside-landing/images/desktop/image-photography.jpg"
+        />
+        <img
+          src="/sunnyside-landing/images/mobile/image-photography.jpg"
+          alt=""
+          class="bg-red-200 h-full w-full object-cover"
+        />
+      </picture>
+      <div
+        class="absolute bottom-5 left-0 right-0 text-center block w-full px-[10%] md:px-[20%] text-blue-800 space-y-4"
+      >
+        <h2 class="text-4xl font-black font-serif text-shadow">
+          Photography
+        </h2>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </article>
+  </section>

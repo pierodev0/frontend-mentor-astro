@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 @layer utilities {
+	.text-shadow {
+		text-shadow: 0px 1px, 1px 0px, 1px 0px;
+	}
     .wrapper {
 		width: 100%;
 		max-width: 1140px;
-		padding-inline: 40px;
+		padding-inline: 25px;
 		margin-inline: auto;
 
 		@media (min-width: 768px){

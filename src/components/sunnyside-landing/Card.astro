@@ -9,22 +9,22 @@ const { image, description, title, inverse } = Astro.props;
 ---
 
 <article
-  class=`flex flex-col ${inverse ? "md:flex-row" : "md:flex-row-reverse"}`
+  class=`flex flex-col ${inverse ? "lg:flex-row" : "lg:flex-row-reverse"}`
 >
-  <picture class="md:w-1/2 md:relative h-[300px] md:h-auto">
+  <picture class="lg:w-1/2 lg:relative h-[300px] lg:h-auto">
     <source
-      class="bg-red-200 h-full w-full md:absolute object-cover"
+      class="bg-red-200 h-full w-full lg:absolute object-cover"
       media="(min-width: 640px)"
       srcset=`/sunnyside-landing/images/desktop/${image}.jpg`
     />
     <img
-      class="bg-red-200 h-full w-full md:absolute object-cover"
+      class="bg-red-200 h-full w-full lg:absolute object-cover"
       src=`/sunnyside-landing/images/mobile/${image}.jpg`
       alt=`Image of ${title}`
     />
   </picture>
   <div
-    class="md:w-1/2 flex items-center md:items-start flex-col gap-5 px-8 py-6 md:py-48 md:px-28 text-center md:text-left"
+    class="lg:w-1/2 flex items-center lg:items-start flex-col gap-5 px-8 py-6 lg:py-48 lg:px-28 text-center lg:text-left"
   >
     <h2 class="text-3xl font-serif font-black">{title}</h2>
     {description}
