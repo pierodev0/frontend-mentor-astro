@@ -1,10 +1,25 @@
 ---
 import LayoutTailwind from "../layouts/LayoutTailwind.astro";
 import Nav from "../components/manage-landing/Nav.astro";
+import Hero from "../components/manage-landing/Hero.astro";
 ---
 
 <LayoutTailwind title="Manage Landing">
-  <Nav/>
+  <div class="bg-hero">
+    <Nav />
+    <Hero />
+  </div>
 </LayoutTailwind>
 
+<style>
+  .bg-hero {
+    background-image: url("/manage-landing/images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -20px right -20px;
 
+    @media (max-width: 1024px) {      
+      background-position: right -80px top -40px;
+      background-size: contain;
+    }
+  }
+</style>
