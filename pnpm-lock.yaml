@@ -14,6 +14,9 @@ importers:
       astro:
         specifier: 5.0.0-beta.1
         version: 5.0.0-beta.1(rollup@4.22.4)(typescript@5.6.2)
+      easy-tailwind:
+        specifier: ^1.1.0
+        version: 1.1.0
       tailwindcss:
         specifier: ^3.4.12
         version: 3.4.12
@@ -976,6 +979,9 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  easy-tailwind@1.1.0:
+    resolution: {integrity: sha512-mfjV/9AX36pHnaGxjFQE27b9wvFGxGZmtB9lOo8iRvTeltHbieyS6aZxPpTvCulgqXjRqdVJe9t/48zhtM8JIg==}
 
   electron-to-chromium@1.5.27:
     resolution: {integrity: sha512-o37j1vZqCoEgBuWWXLHQgTN/KDKe7zwpiY5CPeq2RvUqOyJw9xnrULzZAEVQ5p4h+zjMk7hgtOoPdnLxr7m/jw==}
@@ -3010,6 +3016,8 @@ snapshots:
   dset@3.1.4: {}
 
   eastasianwidth@0.2.0: {}
+
+  easy-tailwind@1.1.0: {}
 
   electron-to-chromium@1.5.27: {}
 
