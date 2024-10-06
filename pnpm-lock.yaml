@@ -11,12 +11,12 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.1
         version: 5.1.1(astro@5.0.0-beta.1(rollup@4.22.4)(typescript@5.6.2))(tailwindcss@3.4.12)
+      '@glidejs/glide':
+        specifier: ^3.6.2
+        version: 3.6.2
       astro:
         specifier: 5.0.0-beta.1
         version: 5.0.0-beta.1(rollup@4.22.4)(typescript@5.6.2)
-      easy-tailwind:
-        specifier: ^1.1.0
-        version: 1.1.0
       tailwindcss:
         specifier: ^3.4.12
         version: 3.4.12
@@ -451,6 +451,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@glidejs/glide@3.6.2':
+    resolution: {integrity: sha512-oXw7In0IZV69PC0PChQakY+yh+UnqIb5+zfVuEIzub6Kkfl1foo7TAhr2PZXPzihOG9YS57t8wvdzBFEZ0aPVA==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -979,9 +982,6 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
-
-  easy-tailwind@1.1.0:
-    resolution: {integrity: sha512-mfjV/9AX36pHnaGxjFQE27b9wvFGxGZmtB9lOo8iRvTeltHbieyS6aZxPpTvCulgqXjRqdVJe9t/48zhtM8JIg==}
 
   electron-to-chromium@1.5.27:
     resolution: {integrity: sha512-o37j1vZqCoEgBuWWXLHQgTN/KDKe7zwpiY5CPeq2RvUqOyJw9xnrULzZAEVQ5p4h+zjMk7hgtOoPdnLxr7m/jw==}
@@ -2502,6 +2502,8 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
+  '@glidejs/glide@3.6.2': {}
+
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
       '@img/sharp-libvips-darwin-arm64': 1.0.4
@@ -3016,8 +3018,6 @@ snapshots:
   dset@3.1.4: {}
 
   eastasianwidth@0.2.0: {}
-
-  easy-tailwind@1.1.0: {}
 
   electron-to-chromium@1.5.27: {}
 
