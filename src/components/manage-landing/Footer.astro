@@ -1,0 +1,105 @@
+---
+import IconFacebook from "./Icons/IconFacebook.astro";
+import IconInstagram from "./Icons/IconInstagram.astro";
+import IconPinterest from "./Icons/IconPinterest.astro";
+import IconTwitter from "./Icons/IconTwitter.astro";
+import IconYoutube from "./Icons/IconYoutube.astro";
+---
+
+<footer class="bg-black text-white py-10">
+  <section class="wrapper max-sm:space-y-8 layout-grid">
+    <div class="flex gap-4 footer__email">
+      <input
+        type="text"
+        class="flex-1 h-10 rounded-full text-gray-500 px-4 border-none outline-none"
+        placeholder="Updates in your inbox..."
+      />
+      <button
+        class="hover:cursor-pointer h-10 bg-orange-manage text-white font-bold rounded-full px-6 shrink-0 hover:bg-orange-300 transition"
+        >Go</button
+      >
+    </div>
+    <div class="px-4 flex justify-between sm:grid sm:grid-cols-2 footer__links">
+      <div class="flex flex-col">
+        <a class="hover:text-orange-manage text-gray-300 py-2" href="#">Home</a>
+        <a class="hover:text-orange-manage text-gray-300 py-2" href="#"
+          >Pricing</a
+        >
+        <a class="hover:text-orange-manage text-gray-300 py-2" href="#"
+          >Products</a
+        >
+        <a class="hover:text-orange-manage text-gray-300 py-2" href="#"
+          >About Us</a
+        >
+      </div>
+      <div class="flex flex-col">
+        <a class="hover:text-orange-manage text-gray-300 py-2" href="#"
+          >Careers</a
+        >
+        <a class="hover:text-orange-manage text-gray-300 py-2" href="#"
+          >Community</a
+        >
+        <a class="hover:text-orange-manage text-gray-300 py-2" href="#"
+          >Privat Policy</a
+        >
+      </div>
+    </div>
+    <div class="flex gap-2 justify-between sm:justify-start sm:items-end footer__icons">
+      <IconFacebook
+        class="hover:text-orange-manage hover:cursor-pointer max-sm:!size-7"
+      />
+      <IconYoutube
+        class="hover:text-orange-manage hover:cursor-pointer max-sm:!size-7"
+      />
+      <IconTwitter class="hover:text-orange-manage hover:cursor- max-sm:!size-7" />
+      <IconPinterest
+        class="hover:text-orange-manage hover:cursor-pointer max-sm:!size-7"
+      />
+      <IconInstagram
+        class="hover:text-orange-manage hover:cursor-pointer max-sm:!size-7"
+      />
+    </div>
+    <div class="flex justify-center footer__logo h-6 sm:justify-start">
+      <img
+        src="/manage-landing/images/logo-white.svg"
+        alt="Logo landing"
+      />
+    </div>
+    <div class="sm:flex sm:items-end sm:justify-end footer__copyright">
+      <p class="text-center text-gray-300">
+        Copyright {new Date().getFullYear()} All Rights Reserved
+      </p>
+    </div>
+  </section>
+</footer>
+
+<style>
+  @media (min-width: 640px) {
+    .layout-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .footer__email {
+      grid-row: 1/2;
+      grid-column: 4/5;
+    }
+    .footer__links {
+      grid-row: 1/3;
+      grid-column: 2/4;
+    }
+    .footer__icons {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+    .footer__logo {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    .footer__copyright {
+      grid-row: 2/3;
+      grid-column: 4/5;
+    }
+  }
+</style>
