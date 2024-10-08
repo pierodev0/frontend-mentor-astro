@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "sun-landing",
-        "manage-landing"
+        "manage-landing",
+        "easybank"
     ]
 }

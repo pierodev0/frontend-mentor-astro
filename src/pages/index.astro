@@ -4,16 +4,16 @@ import LayoutTailwind from "../layouts/LayoutTailwind.astro";
 ---
 
 <LayoutTailwind title="Projects Frontend Mentor">
-  <main class="bg-slate-950 pb-12">
+  <main class="pb-12 bg-slate-950">
     <header class="h-screen grid place-content-center">
       <h1
-        class="text-5xl mx-auto max-w-screen-lg text-center sm:text-7xl text-white font-bold"
+        class="mx-auto max-w-screen-lg text-5xl font-bold text-center text-white sm:text-7xl"
       >
         Proyectos Frontend Mentor
       </h1>
     </header>
     <section
-      class="grid gap-8 lg:gap-10 w-full max-w-screen-xl sm:grid-cols-2 xl:grid-cols-3 wrapper"
+      class="wrapper w-full max-w-screen-xl grid gap-8 lg:gap-10 sm:grid-cols-2 xl:grid-cols-3"
     >     
       <Card
         title="Acordion"
@@ -38,6 +38,12 @@ import LayoutTailwind from "../layouts/LayoutTailwind.astro";
         description="Maquetacion de una landing page con tema de software"
         image="/index/images/manage-landing.jpg"
         href="/manage-landing"
+      />
+      <Card
+        title="Manage Landing"
+        description="Maquetacion de una landing page con tema de software"
+        image="/index/images/manage-landing.jpg"
+        href="/easybank"
       />
     </section>
   </main>

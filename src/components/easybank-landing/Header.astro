@@ -1,0 +1,76 @@
+---
+import Button from "@components/easybank-landing/Button.astro";
+import Link from "@components/easybank-landing/Link.astro";
+---
+
+<header>
+  <nav class='wrapper h-20 flex justify-between items-center'>
+    <div>
+      <a href='#'
+        ><img
+          src='/public/easybank-landing/images/logo.svg'
+          alt=''
+        /></a
+      >
+    </div>
+    <!-- prettier-ignore-start -->
+    <div
+      class='max-md:bg-black/30 max-md:absolute max-md:inset-0 max-md:top-20 md:h-full
+            max-md:hidden' id="layer-menu"
+    >
+      <ul
+        class='md:h-full flex items-center gap-2
+            max-md:absolute
+            max-md:top-10
+            max-md:left-0
+            max-md:right-0
+            max-md:w-[90%]
+            max-md:mx-auto
+            max-md:flex-col
+            max-md:items-center
+            max-md:justify-center
+            max-md:p-10
+            max-md:hidden
+            max-md:rounded-md
+            max-md:bg-white'
+        id='nav-menu'
+      >
+        <!-- prettier-ignore-end -->
+        <Link>Home</Link>
+        <Link>About</Link>
+        <Link>Contact</Link>
+        <Link>Blog</Link>
+        <Link>Carrers</Link>
+      </ul>
+    </div>
+    <Button class='max-md:hidden'>Request Invite</Button>
+    <div
+      class="bg-[url('/easybank-landing/images/icon-hamburger.svg')] bg-no-repeat size-6 md:hidden bg-center cursor-pointer active"
+      id='icon-menu'
+    >
+    </div>
+  </nav>
+</header>
+
+<script>
+  {
+    const iconMenu = document.querySelector("#icon-menu");
+    const navMenu = document.querySelector("#nav-menu");
+    const layerMenu = document.querySelector("#layer-menu");
+    iconMenu.addEventListener("click", (e) => {
+      if (iconMenu.classList.contains("active")) {
+        iconMenu.classList.remove("active");
+        iconMenu.classList.remove("bg-[url('/easybank-landing/images/icon-hamburger.svg')]");
+        iconMenu.classList.add("bg-[url('/easybank-landing/images/icon-close.svg')]");
+        navMenu.classList.remove("max-md:hidden");
+        layerMenu.classList.remove("max-md:hidden");
+      } else {
+        iconMenu.classList.add("active");
+        iconMenu.classList.remove("bg-[url('/easybank-landing/images/icon-close.svg')]");
+        iconMenu.classList.add("bg-[url('/easybank-landing/images/icon-hamburger.svg')]");
+        navMenu.classList.add("max-md:hidden");
+        layerMenu.classList.add("max-md:hidden");
+      }
+    });
+  }
+</script>
