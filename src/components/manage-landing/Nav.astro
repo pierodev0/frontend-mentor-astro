@@ -1,0 +1,68 @@
+---
+
+---
+<header>
+    <nav class="h-[80px] flex items-center justify-between wrapper">
+      <div>
+        <img
+          src="/manage-landing/images/logo.svg"
+          alt="Logo landing"
+          class=""
+        />
+      </div>
+
+      <ul
+        id="menu-mobile"
+        class="flex items-center gap-4 font-bold
+        max-lg:bg-white
+        max-lg:absolute
+        max-lg:top-[calc(80px_+_20px)]
+        max-lg:left-0
+        max-lg:right-0
+        max-lg:w-[calc(100%-50px)]
+        max-lg:mx-auto
+        max-lg:p-8
+        max-lg:place-content-center
+        max-lg:rounded-md
+        max-lg:hidden
+        max-lg:shadow-lg"
+      >
+        <li class="flex justify-center"><a href="#">Pricing</a></li>
+        <li class="flex justify-center"><a href="#">Product</a></li>
+        <li class="flex justify-center"><a href="#">About Us</a></li>
+        <li class="flex justify-center"><a href="#">Careers</a></li>
+        <li class="flex justify-center"><a href="#">Community</a></li>
+      </ul>
+      <a
+        href="#"
+        class="inline-flex items-center text-white font-medium h-11 px-8 rounded-full bg-orange-manage hover:bg-orange-300 shadow-[0px_20px_12px_-12px_#ffedd6] max-lg:hidden"
+        >Get Started</a
+      >
+
+      <span
+        id="icon-hamburguer"
+        class="block w-8 h-6 bg-hamburguer bg-contain bg-no-repeat cursor-pointer lg:hidden bg-center transition"
+      >
+      </span>
+    </nav>
+  </header>
+
+  <style>
+    .bg-hamburguer {
+      background-image: url("/manage-landing/images/icon-hamburger.svg");
+    }
+    .bg-hamburguer--close {
+      background-image: url("/manage-landing/images/icon-close.svg");
+    }
+  </style>
+  
+  <script>
+    const iconHamburguer = document.querySelector("#icon-hamburguer");
+    const menu = document.querySelector("#menu-mobile");
+  
+    iconHamburguer.addEventListener("click", () => {
+      iconHamburguer.classList.toggle("bg-hamburguer--close");
+      menu.classList.toggle("max-lg:hidden");
+      menu.classList.toggle("max-lg:!grid");
+    });
+  </script>

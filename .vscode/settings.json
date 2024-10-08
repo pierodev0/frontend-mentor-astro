@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "sun-landing"
+        "sun-landing",
+        "manage-landing"
     ]
 }

@@ -1,0 +1,44 @@
+---
+interface Props {
+    number: string,
+    title: string,
+    description: string,
+}
+const {number,title,description} = Astro.props
+---
+
+<article class="space-y-4">
+    <div
+      class="flex items-center gap-4 relative bg-overflow"            >
+      <p class="flex items-center  bg-orange-manage rounded-full text-white w-[84px] justify-center font-bold h-11">
+        {number}
+      </p>
+      <h3 class="font-bold text-xl pr-8 text-blue-950">
+        {title}
+      </h3>
+    </div>
+    <p class="text-gray-500 lg:ml-[84px] lg:pl-4">
+      {description}
+    </p>
+  </article>
+
+  <style>
+    .bg-overflow::after {
+     @media (max-width: 1024px){
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 239, 227, 0.643);
+      display: inline-block;
+      height: 100%;
+      width: 100vw;
+      z-index: -100;
+      border-radius: 9999px;
+  
+     }
+    }
+  </style>
+  
