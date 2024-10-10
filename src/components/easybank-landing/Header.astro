@@ -3,12 +3,12 @@ import Button from "@components/easybank-landing/Button.astro";
 import Link from "@components/easybank-landing/Link.astro";
 ---
 
-<header>
-  <nav class='wrapper h-20 flex justify-between items-center'>
+<header class="fixed h-20 right-0 left-0 bg-white z-50">
+  <nav class='wrapper flex justify-between items-center h-full'>
     <div>
       <a href='#'
         ><img
-          src='/public/easybank-landing/images/logo.svg'
+          src='/easybank-landing/images/logo.svg'
           alt=''
         /></a
       >
@@ -21,7 +21,7 @@ import Link from "@components/easybank-landing/Link.astro";
       <ul
         class='md:h-full flex items-center gap-2
             max-md:absolute
-            max-md:top-10
+            max-md:top-5
             max-md:left-0
             max-md:right-0
             max-md:w-[90%]

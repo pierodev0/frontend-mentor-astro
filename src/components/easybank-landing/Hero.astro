@@ -1,0 +1,44 @@
+---
+import Button from "./Button.astro";
+---
+
+<section class='flex flex-col md:flex-row-reverse md:*:flex-1 pt-20'>
+  <picture class='relative'>
+    <img
+      src='public/easybank-landing/images/bg-intro-mobile.svg'
+      alt=''
+      class='absolute object-top w-full md:hidden'
+    />
+
+    <img
+      src='public/easybank-landing/images/bg-intro-desktop.svg'
+      alt=''
+      class='absolute hidden md:block h-full object-left-top md:scale-125 -translate-y-24'
+    />
+    <img
+      src='/easybank-landing/images/image-mockups.png'
+      alt='Imagen Hero'
+      class='w-full
+      object-cover
+      object-bottom
+      md:absolute
+      -translate-y-20
+      md:translate-x-20
+      z-10'
+    />
+  </picture>
+  <section class='lg:h-[calc(100vh-80px)] lg:flex md:items-center'>
+    <section
+      class='text-center space-y-6 max-md:pb-12 md:py-20 md:flex md:flex-col md:justify-center md:text-start md:pl-6 xl:pl-40 md:pr-10 xl:pr-16 '
+    >
+      <h1 class='text-4xl lg:text-5xl md:pr-14 xl:pr-16 text-blue-950 lg:leading-[3.5rem]'>
+        Next generation digital banking
+      </h1>
+      <h2 class='text-gray-500 md:pr-12 xl:pr-24'>
+        Take your financial life online. Your Easybank account will be a one-stop-shop for spending,
+        saving, budgeting, investing, and much more.
+      </h2>
+      <Button>Request Invite</Button>
+    </section>
+  </section>
+</section>
