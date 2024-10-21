@@ -1,0 +1,27 @@
+---
+interface Props {
+  image: string;
+  author: string;
+  title: string;
+  text: string;
+}
+
+const { image, author, title, text } = Astro.props;
+---
+
+<article class='rounded-md overflow-hidden'>
+  <div>
+    <img
+      src={image}
+      alt=''
+      class='h-[190px] w-full object-cover'
+    />
+  </div>
+  <div class='space-y-2 p-6 bg-gray-50'>
+    <h3 class='text-gray-400 text-[10px]'>By {author}</h3>
+    <p class='text-gray-800 text-[16px] hover:text-emerald-400 hover:cursor-pointer'>{title}</p>
+    <p class='text-xs text-gray-400'>
+      {text}
+    </p>
+  </div>
+</article>
