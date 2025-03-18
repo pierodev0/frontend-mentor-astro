@@ -10,13 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.5",
     "@tailwindcss/vite": "^4.0.14",
     "astro": "5.5.2",
     "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
-    "postcss-preset-env": "^10.1.5",
     "prettier": "^3.5.3"
   }
 }
